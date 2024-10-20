@@ -1,0 +1,141 @@
+docker --version
+
+Displays the current version of Docker installed.
+docker ps -a
+
+Lists all containers, including those that are stopped.
+docker pull ubuntu:latest
+
+Downloads the latest Ubuntu image from Docker Hub.
+docker images
+
+Lists all Docker images currently available on the local system.
+docker run -d ubuntu
+
+Runs a new Ubuntu container in detached mode (background).
+docker ps -a
+
+Again, lists all containers.
+docker run -dit ubuntu
+
+Runs a new Ubuntu container in detached and interactive mode with a terminal.
+docker ps -1
+
+Typo; likely meant to be docker ps -l, which shows the last created container.
+docker ps -a
+
+Lists all containers again.
+docker exec -it 33c17a8f0ebf bash
+
+Opens an interactive terminal session in the specified container (ID: 33c17a8f0ebf).
+docker ps -a
+
+Lists all containers.
+docker exec -it 33c17a8f0ebf bash
+
+Repeats the command to open an interactive terminal session in the same container.
+docker kill 33c17a8f0ebf
+
+Immediately stops the specified container.
+docker ps1
+
+Typo; likely meant to be docker ps.
+docker ps -a
+
+Lists all containers.
+docker rm 33c17a8f0ebf
+
+Removes the specified container.
+docker kill 745642da
+
+Kills the specified container.
+docker kill 745642daf317
+
+Kills another specified container.
+clear
+
+Clears the terminal screen.
+docker ps -a
+
+Lists all containers.
+docker rm 745642daf317
+
+Removes the specified container.
+docker rm e3f4b87ac61b
+
+Removes another specified container.
+docker ps -a
+
+Lists all containers.
+docker ps
+
+Lists running containers.
+systemctl docker
+
+Likely a typo; possibly meant systemctl start docker to manage the Docker service.
+systemctl status docker
+
+Displays the status of the Docker service.
+clear
+
+Clears the terminal screen again.
+docker pull ubuntu
+
+Downloads the Ubuntu image (default tag is latest).
+docker images
+
+Lists Docker images available on the local system.
+docker run -name chira ubuntu -dit ubuntu
+
+Attempts to run a new Ubuntu container named "chira" in detached and interactive mode (note: syntax error, -name should be --name).
+docker run --help
+
+Displays help information for the docker run command.
+clear
+
+Clears the terminal screen.
+docker images
+
+Lists available Docker images.
+docker run -d
+
+Runs a new container in detached mode (without specifying an image, will fail).
+docker run -d --name "shekher" ubuntu:latest
+
+Runs a new Ubuntu container in detached mode with the name "shekher".
+docker ps-a
+
+Typo; likely meant to be docker ps -a.
+docker ps -a
+
+Lists all containers.
+docker run -di" ubuntu:latest
+
+Typo; should be docker run -dit ubuntu:latest.
+docker run -dit --name "chirag" ubuntu:latest
+
+Runs a new Ubuntu container named "chirag" in detached and interactive mode.
+ps -a
+
+Typo; likely meant to be docker ps -a.
+docker kill shekher
+
+Kills the container named "shekher".
+docker kill chirag
+
+Kills the container named "chirag".
+docker ps -a
+
+Lists all containers.
+docker rm chirag && docker rm shekher
+
+Removes both "chirag" and "shekher" containers.
+docker ps -a
+
+Lists all containers.
+docker images
+
+Lists available Docker images.
+history
+
+Displays the command history of the shell session.
